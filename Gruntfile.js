@@ -42,6 +42,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-targethtml');
     grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks('grunt-protractor-runner');
+
     grunt.registerTask('dist', ['karma', 'protractor', 'concat',
         'targethtml', 'copy']);
+    grunt.registerTask('test', ['karma', 'protractor']);
 };
