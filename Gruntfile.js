@@ -35,6 +35,9 @@ module.exports = function(grunt) {
                     configFile: 'conf/protractor.conf.js'
                 }
             }
+        },
+        eslint: {
+            target: ['src/**/*.js', 'test/**/*.js']
         }
     });
     grunt.loadNpmTasks('grunt-contrib-concat');
@@ -42,8 +45,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-targethtml');
     grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks('grunt-protractor-runner');
+    grunt.loadNpmTasks('grunt-eslint');
 
-    grunt.registerTask('dist', ['karma', 'protractor', 'concat',
+    grunt.registerTask('test', ['eslint', 'karma', 'protractor']);
+    grunt.registerTask('dist', ['test', 'concat',
         'targethtml', 'copy']);
-    grunt.registerTask('test', ['karma', 'protractor']);
 };
