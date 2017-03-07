@@ -6,7 +6,7 @@ module.exports = function(grunt) {
                 separator: ';'
             },
             dist: {
-                src: ['node_modules/angular/angular.min.js', 'app/js/*.js'],
+                src: ['node_modules/angular/angular.min.js', 'app/**/*.js'],
                 dest: 'dist/js/<%= pkg.name %>.js'
             }
         },
