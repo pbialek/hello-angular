@@ -6,20 +6,20 @@ module.exports = function(grunt) {
                 separator: ';'
             },
             dist: {
-                src: ['node_modules/angular/angular.min.js', 'src/js/*.js'],
+                src: ['node_modules/angular/angular.min.js', 'app/**/*.js'],
                 dest: 'dist/js/<%= pkg.name %>.js'
             }
         },
         copy: {
             main: {
-                src: 'src/css/main.css',
+                src: 'app/css/main.css',
                 dest: 'dist/css/main.css',
             },
         },
         targethtml: {
             dist: {
                 files: {
-                    'dist/index.html': 'src/index.html'
+                    'dist/index.html': 'app/index.html'
                 }
             }
         },
@@ -37,7 +37,7 @@ module.exports = function(grunt) {
             }
         },
         eslint: {
-            target: ['src/**/*.js', 'test/**/*.js']
+            target: ['app/**/*.js', 'test/**/*.js']
         }
     });
     grunt.loadNpmTasks('grunt-contrib-concat');

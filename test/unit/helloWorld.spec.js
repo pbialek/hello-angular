@@ -1,6 +1,24 @@
 "use strict";
+describe("controller specs", function() {
+    var $scope;
+
+    beforeEach(module("myApp.helloWorld"));
+    beforeEach(inject(function($rootScope, $controller) {
+        $scope = $rootScope.$new();
+        $controller("helloWorldCtrl", {$scope: $scope});
+    }));
+
+    it("should create \"name\" model with first name \"John\"", function() {
+        expect($scope.name.first).toBe("John");
+    });
+
+    it("should create \"name\" model with last name \"Smith\"", function() {
+        expect($scope.name.last).toBe("Smith");
+    });
+});
+
 describe("specs for directives", function() {
-    beforeEach(module("myApp.directives"));
+    beforeEach(module("myApp.helloWorld"));
 
     var $scope;
 
