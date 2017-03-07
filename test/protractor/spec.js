@@ -1,14 +1,14 @@
 "use strict";
 describe("hello world app", function() {
     it("should have a title", function() {
-        browser.get("http://localhost:8000/src/");
+        browser.get("http://localhost:8000/app/");
         expect(browser.getTitle()).toEqual("Hello World");
     });
 });
 
 describe("name fields", function() {
     it("should be filled out and editable", function() {
-        browser.get("http://localhost:8000/src/");
+        browser.get("http://localhost:8000/app/");
 
         var h1 = element.all(by.css("h1")).first();
         var fname = element.all(by.tagName("input")).first();
