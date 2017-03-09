@@ -9,10 +9,10 @@
   },
   "devDependencies": {
     "angular-mocks": "1.6.2",
-    "eslint": "^3.17.0",
-    "eslint-config-standard": "^7.0.0",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^2.1.1",
+    "eslint": "3.17.0",
+    "eslint-config-standard": "7.0.0",
+    "eslint-plugin-promise": "3.5.0",
+    "eslint-plugin-standard": "2.1.1",
     "grunt": "1.0.1",
     "grunt-contrib-concat": "1.0.1",
     "grunt-contrib-copy": "1.0.0",
@@ -22,7 +22,8 @@
     "grunt-targethtml": "0.2.6 ",
     "karma": "1.5.0",
     "karma-chrome-launcher": "2.0.0",
-    "karma-jasmine": "1.1.0"
+    "karma-jasmine": "1.1.0",
+    "karma-ng-html2js-preprocessor": "1.0.0"
   },
   "scripts": {
     "prestart": "npm install",

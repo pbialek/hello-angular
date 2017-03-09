@@ -19,6 +19,7 @@ describe("controller specs", function() {
 
 describe("specs for directives", function() {
     beforeEach(module("myApp.helloWorld"));
+    beforeEach(module("helloWorld/helloWorld.html"));
 
     var $scope;
 
