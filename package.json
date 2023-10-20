@@ -21,7 +21,7 @@
     "grunt-protractor-runner": "4.0.0",
     "grunt-targethtml": "0.2.6 ",
     "karma": "1.5.0",
-    "karma-chrome-launcher": "2.0.0",
+    "karma-chrome-launcher": "4.0.2",
     "karma-jasmine": "1.1.0",
     "karma-ng-html2js-preprocessor": "1.0.0"
   },
