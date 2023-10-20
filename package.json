@@ -5,10 +5,10 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "angular": "1.6.2"
+    "angular": "1.8.x"
   },
   "devDependencies": {
-    "angular-mocks": "1.6.2",
+    "angular-mocks": "1.8.x",
     "eslint": "3.17.0",
     "eslint-config-standard": "7.0.0",
     "eslint-plugin-promise": "3.5.0",
@@ -17,10 +17,10 @@
     "grunt-contrib-concat": "1.0.1",
     "grunt-contrib-copy": "1.0.0",
     "grunt-eslint": "19.0.0",
-    "grunt-karma": "4.0.2",
+    "grunt-karma": "4.0.x",
     "grunt-protractor-runner": "4.0.0",
     "grunt-targethtml": "0.2.6 ",
-    "karma": "1.5.0",
+    "karma": "6.4.x",
     "karma-chrome-launcher": "3.2.0",
     "karma-jasmine": "1.1.0",
     "karma-ng-html2js-preprocessor": "1.0.0"
